@@ -19,5 +19,5 @@ n.b. A large value of **n > 1000** is necessary to acquire a reasonably accurate
 <br />
 In fact, it is only necessary to consider a single quadrant of the picture above as πr^2/(2r)^2=(1/4)(πr^2)/r^2. <br />
 Calling the random number function twice generates an (x,y) co-ordinate for the upper-right quadrant of the square.
-If we do this **n** times, counting how many times the co-ordinates fall inside the circle **m**, we can compute the probability **P(inside circle) = m/n**.
-Given **P(inside circle) = πr^2/(2r)^2**, we can re-arrange the expression to find **π** like so π = 4(m/n).
+If we do this n times, counting how many times the co-ordinates fall inside the circle m, we can compute the probability P(inside circle) = m/n.
+Given P(inside circle) = πr^2/(2r)^2, we can re-arrange the expression to find π like so π = 4(m/n).
