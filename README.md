@@ -13,7 +13,7 @@ Consider a circle of radius **r** which is placed inside a square with length **
 
 If we were to pick a set of co-ordinates at random in the picture above, then the probability of our co-ordinates falling inside the circle is given by the area of the circle divided by the area of the square, i.e. **P(inside circle) = πr^2/(2r)^2**.
 The random number function affords a method for generating random co-ordiantes.
-Therefore, for a sample of **n** random co-ordinates, we can expect the ratio of co-ordinates falling inside the circle **(m)** to the total number of co-ordinates **(n)** to tend towards the probability **P(inside circle)**.
+Therefore, for a sample of **n** random co-ordinates, we can expect the ratio of co-ordinates falling inside the circle **(m)** to the total number of co-ordinates **(n)** to tend towards the probability **P(inside circle)**. <br />
 n.b. A large value of **n > 1000** is necessary to acquire a reasonably accurate estimation of **π**.
 
 <br />
