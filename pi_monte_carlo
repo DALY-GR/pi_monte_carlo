@@ -1,0 +1,26 @@
+# monte carlo simulation to find pi
+import math
+import random
+
+# generate random co-ordinate between { x in [0,1], y in [0,1] }
+def random_coordinate():
+    return (random.uniform(0,1), random.uniform(0,1))
+
+# check if given coordinate is within the circle of radius 1
+def in_circle(x,y):
+    l = math.sqrt( x**2 + y**2 );
+    return ( l <= 1 )
+
+n = int(input("How many iterations would you like to run?"))
+m = 0; # no. of points inside the circle
+
+for i in range(n):
+    (x,y) = random_coordinate();
+    if( in_circle(x,y) ):
+        m += 1
+    ratio = m/(i+1);
+    if( i % (n/5) == 0 ): print( "i = ", i, " ratio = ", ratio)
+
+# Since the simulation only considers a quarter of the circle inside a square of length 1;
+# the ratio must be multiplied by 4 to find the value of pi
+print("Your estimate for the value of pi is \u03C0 = ", 4*ratio)
